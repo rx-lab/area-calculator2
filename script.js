@@ -169,9 +169,10 @@ function calculateAndDraw() {
     });
 
     document.getElementById('result').innerHTML = `
-        <strong>مساحت کل چندضلعی:</strong> ${totalArea} واحد مربع<br>
-        <strong>مساحت مثلث‌ها:</strong><br>${triangleAreas.map(t => `مثلث ${t.index} (${t.points}): ${t.area} واحد مربع`).join('<br>')}<br>
+        <strong>مساحت کل چندضلعی:</strong> ${totalArea} متر مربع<br>
+        <strong>مساحت مثلث‌ها:</strong><br>${triangleAreas.map(t => `مثلث ${t.index} (${t.points}): ${t.area} متر مربع`).join('<br>')}<br>
         <strong>طول اضلاع:</strong><br>${sides.join('<br>')}
     `;
     drawPolygon(points, triangles);
+
 }
